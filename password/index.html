@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Login Form with floating placeholder and light button</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="login-box">
+  <h2>Login</h2>
+  <div>
+    <div class="user-box">
+      <input type="text" id="2" name="" required="">
+      <label>问题1：谁是世界上最帅的人</label>
+    </div>
+    <div class="user-box">
+      <input type="text" id="1" name="" required="">
+      <label>问题2：你心目中的男神是谁</label>
+    </div>
+    <a href="">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <div id="3">确认</div>
+    </a>
+    <script language="javascript" type="text/javascript">
+      let btn=document.getElementById('3');
+      btn.onclick=function(){
+        let password1=document.getElementById('1');
+        let password2=document.getElementById('2');
+        if((password1.value==="任奕杰")&&(password2.value==="任奕杰")){
+          window.location.href="../black1/index.html";
+          return false;
+        }
+        else{
+          alert('你的智商不配往下看了')
+        }
+      }
+    </script>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
